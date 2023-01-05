@@ -1,11 +1,15 @@
-import './App.css';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
-  );
+    <>
+    <Button 
+    variant="contained" 
+    color='success' 
+    onClick={()=>console.log('button clicked')} >
+      Hello World
+    </Button>
+    </>
+  )
 }
-
 export default App;
