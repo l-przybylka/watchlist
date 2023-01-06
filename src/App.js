@@ -1,14 +1,9 @@
-import Button from '@mui/material/Button';
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
     <>
-    <Button 
-    variant="contained" 
-    color='success' 
-    onClick={()=>console.log('button clicked')} >
-      Hello World
-    </Button>
+    <Navbar />
     </>
   )
 }
