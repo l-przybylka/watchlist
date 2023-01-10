@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import {  createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from './routes/root';
+import ErrorPage from './routes/error-page'
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
+    errorElement: <ErrorPage />
   },
 ]);
 
