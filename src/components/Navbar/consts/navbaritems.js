@@ -1,37 +1,26 @@
-import AppleIcon from '@mui/icons-material/Apple';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export const mainNavbarItems = [
     {
         id: 0,
-        icon: <AppleIcon />,
-        label: 'First navbar position',
+        icon: <AccountBoxIcon />,
+        label: 'Profile',
         route: 'route'
     },
     {
         id: 1,
-        icon: <BedtimeIcon />,
-        label: '2nd navbar position',
+        icon: <TheaterComedyIcon />,
+        label: 'Your lists',
         route: 'route'
     },
     {
         id: 2,
-        icon: '',
-        label: '3rd navbar position',
+        icon: <LogoutIcon />,
+        label: 'Logout',
         route: 'route'
-    },
-    {
-        id: 3,
-        icon: '',
-        label: '4th navbar position',
-        route: 'route'
-    },
-    {
-        id: 4,
-        icon: '',
-        label: '5th navbar position',
-        route: 'route'
-    },
+    }
 ]
 
 // FIND ICONS HERE: https://mui.com/material-ui/material-icons/
