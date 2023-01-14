@@ -7,19 +7,19 @@ export const mainNavbarItems = [
         id: 0,
         icon: <AccountBoxIcon />,
         label: 'Profile',
-        route: 'route'
+        route: 'profile'
     },
     {
         id: 1,
         icon: <TheaterComedyIcon />,
         label: 'Your lists',
-        route: 'route'
+        route: 'lists'
     },
     {
         id: 2,
         icon: <LogoutIcon />,
         label: 'Logout',
-        route: 'route'
+        route: 'logout'
     }
 ]
 

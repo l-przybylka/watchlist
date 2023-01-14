@@ -9,11 +9,14 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { mainNavbarItems } from "./consts/navbaritems";
+import { useNavigate } from "react-router-dom";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     bottom: false,
   });
+
+  const navigate = useNavigate()  
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -34,20 +37,24 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {mainNavbarItems.map((text) => (
-          <ListItem key={text.id} disablePadding>
+        {mainNavbarItems.map((item) => (
+          <ListItem 
+              key={item.id}
+              onClick={() => navigate(item.route)}
+              disablePadding>
             <ListItemButton>
-              <ListItemIcon>{text.icon}</ListItemIcon>
-              <ListItemText primary={text.label} />
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
     </Box>
-  );
+  );    
 
   return (
+    
     <>
       <Button onClick={toggleDrawer("bottom", true)}>MENU</Button>
       <Drawer
