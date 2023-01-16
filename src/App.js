@@ -1,10 +1,11 @@
-import {  createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from './routes/root';
 import ErrorPage from './routes/error-page'
 import Login from './routes/login'
 import Lists from "./routes/lists";
 import Register from "./routes/register";
 import Profile from "./routes/profile";
+import Grid from "@mui/material/Grid";
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,14 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
-       <RouterProvider router={router} />
-    </div>
+    <Grid
+      container
+      direction="column"
+      justifyContent="flex-end"
+      alignItems="center"
+    >
+      <RouterProvider router={router} />
+    </Grid>
   )
 }
 export default App;

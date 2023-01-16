@@ -10,6 +10,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { mainNavbarItems } from "./consts/navbaritems";
 import { useNavigate } from "react-router-dom";
+import Container from "@mui/material/Container";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -56,6 +57,7 @@ export default function TemporaryDrawer() {
   return (
     
     <>
+
       <Button onClick={toggleDrawer("bottom", true)}>MENU</Button>
       <Drawer
         anchor="bottom"
@@ -64,6 +66,7 @@ export default function TemporaryDrawer() {
       >
         {list("bottom")}
       </Drawer>
+  
     </>
   );
 }
