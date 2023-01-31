@@ -4,22 +4,22 @@ import Grid from '@mui/material/Grid';
 import axios from 'axios';
 
 
-const options = {
-    method: 'GET',
-    url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/The%20Godfather',
-    params: {exact: 'true', startYear: '1970', endYear: '1975'},
-    headers: {
-      'X-RapidAPI-Key': '039f663e8amsh6666f23f330d58dp15d469jsn5b2400dd7f50',
-      'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-    }
-  };
+// const options = {
+//     method: 'GET',
+//     url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/The%20Godfather',
+//     params: {exact: 'true', startYear: '1970', endYear: '1975'},
+//     headers: {
+//       'X-RapidAPI-Key': '039f663e8amsh6666f23f330d58dp15d469jsn5b2400dd7f50',
+//       'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+//     }
+//   };
   
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+// axios.request(options).then(function (response) {
+// 	console.log(response.data);
+// }).catch(function (error) {
+// 	console.error(error);
+// });
 
 export default function Root() {
     return (

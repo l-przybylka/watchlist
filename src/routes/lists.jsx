@@ -1,7 +1,17 @@
+import { width } from '@mui/system'
 import React from 'react'
+import MovieTable from 'src/components/MovieTable'
 
-export default function lists() {
+const lists = () => {
   return (
-    <div>lists</div>
+    <div 
+        style={{ 
+          height: 1000, 
+          width: 1000
+          }}>
+      <MovieTable />
+    </div>
   )
 }
+
+export default lists
