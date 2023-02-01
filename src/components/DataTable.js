@@ -6,7 +6,7 @@ const DataTable = ({
     columns
 }) => {
     return (
-        <DataGrid rows={rows} columns={columns} />
+        <DataGrid rows={rows} columns={columns} getRowHeight={() => 'auto'} />
     )
 }
 

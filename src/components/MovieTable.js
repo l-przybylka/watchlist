@@ -109,10 +109,10 @@ const MovieTable = () => {
     ];
 
     const columns = [
-        { field: 'col1', headerName: 'Rank', width: 150 },
+        { field: 'col1', headerName: 'Rank', width: 50 },
+        { field: 'col3', headerName: '', renderCell: (params) => { return (<Avatar variant="square" src={params.value} alt={`Thumbnail for ${params.row.col2}`} />) }, width: 50 },
         { field: 'col2', headerName: 'Title', width: 250 },
-        { field: 'col3', headerName: 'Thumbnail', renderCell: (params) => { return (<Avatar variant="square" src={params.value} alt={`Thumbnail for ${params.row.col2}`} />) }, width: 150 },
-        { field: 'col4', headerName: 'Rating', width: 150 },
+        { field: 'col4', headerName: 'Rating', width: 75 },
         { field: 'col5', headerName: 'Description', width: 350 },
     ];
 
