@@ -28,9 +28,9 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register />
-      },
-    ]
-  },
+      }
+    ],
+  }
 ]);
 
 function App() {
